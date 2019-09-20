@@ -32,6 +32,10 @@ export class RecipeService {
           return this.recipes.slice() //this allows only a copy of recipes with the splice 
       }
 
+      getRecipe(id: number) {
+          return this.recipes[id]
+      }
+
       addIngredientsToShoppingList(ingredients: Ingredient[]) {
         this.slService.addIngredients(ingredients)
       }
